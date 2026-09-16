@@ -1,0 +1,876 @@
+:root {
+  --ink: #17221f;
+  --paper: #f3efe5;
+  --lime: #d6f04a;
+  --coral: #f16f52;
+  --line: rgba(23, 34, 31, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--paper);
+  color: var(--ink);
+}
+
+a {
+  color: inherit;
+}
+
+.site-shell {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 76px;
+  padding: 0 7%;
+  border-bottom: 1px solid var(--line);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.brand {
+  color: var(--coral);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links a:hover,
+.text-link:hover {
+  color: var(--coral);
+}
+
+.date-stamp {
+  opacity: 0.6;
+}
+
+.hero {
+  display: flex;
+  min-height: 620px;
+  border-bottom: 1px solid var(--line);
+}
+
+.hero-copy {
+  width: 69%;
+  padding: 130px 7% 100px;
+}
+
+.eyebrow {
+  margin: 0 0 20px;
+  color: var(--coral);
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  max-width: 800px;
+  margin-bottom: 32px;
+  font-size: 120px;
+  line-height: 0.85;
+  letter-spacing: -7px;
+}
+
+h2 {
+  font-size: 70px;
+  line-height: 0.9;
+  letter-spacing: -4px;
+}
+
+em {
+  color: var(--coral);
+  font-family: Georgia, serif;
+  font-weight: normal;
+}
+
+.hero-intro {
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.text-link span {
+  color: var(--coral);
+  font-size: 22px;
+}
+
+.hero-marker {
+  width: 31%;
+  padding: 70px 5%;
+  background-color: var(--lime);
+}
+
+.hero-marker span {
+  display: block;
+  font-size: 105px;
+  font-weight: bold;
+  letter-spacing: -8px;
+}
+
+.hero-marker strong {
+  display: block;
+  margin: 80px 0 60px 25%;
+  font-size: 190px;
+  font-weight: normal;
+  line-height: 0.3;
+}
+
+.hero-marker small {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.section-block,
+.difficulties-section,
+.options-section {
+  display: flex;
+  gap: 8%;
+  padding: 140px 7%;
+  border-bottom: 1px solid var(--line);
+}
+
+.section-heading {
+  width: 38%;
+}
+
+.section-heading h2 {
+  margin: 0;
+}
+
+.outlook-list {
+  width: 62%;
+  border-top: 1px solid var(--line);
+}
+
+.outlook-item {
+  display: flex;
+  gap: 30px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.item-number {
+  color: var(--coral);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.outlook-item h3 {
+  margin-bottom: 10px;
+  font-size: 21px;
+}
+
+.outlook-item p,
+.section-note {
+  max-width: 500px;
+  color: rgba(23, 34, 31, 0.7);
+  line-height: 1.6;
+}
+
+.difficulties-section {
+  background-color: #e8e1d3;
+}
+
+.difficulty-columns {
+  display: flex;
+  width: 62%;
+  gap: 45px;
+}
+
+.difficulty-column {
+  flex: 1;
+}
+
+.difficulty-column h3 {
+  margin: 0 0 25px;
+  font-size: 24px;
+}
+
+.difficulty-item {
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+}
+
+.difficulty-item strong {
+  font-size: 16px;
+}
+
+.difficulty-item p {
+  margin: 10px 0 0;
+  color: rgba(23, 34, 31, 0.7);
+  line-height: 1.55;
+}
+
+.human-column h3 {
+  color: var(--coral);
+}
+
+.options-section {
+  background-color: var(--ink);
+  color: var(--paper);
+}
+
+.options-section .eyebrow,
+.strength {
+  color: var(--lime);
+}
+
+.options-section em {
+  color: var(--lime);
+}
+
+.section-note {
+  margin-top: 30px;
+  color: rgba(243, 239, 229, 0.7);
+}
+
+.options-table {
+  width: 62%;
+  align-self: center;
+  border-top: 1px solid rgba(243, 239, 229, 0.4);
+}
+
+.table-head,
+.table-row {
+  display: flex;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(243, 239, 229, 0.25);
+  font-size: 14px;
+}
+
+.table-head {
+  color: var(--lime);
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.table-head span:first-child,
+.table-row span:first-child {
+  width: 30%;
+}
+
+.table-head span:nth-child(2),
+.table-row span:nth-child(2) {
+  width: 40%;
+}
+
+.table-head span:last-child,
+.table-row span:last-child {
+  width: 30%;
+}
+
+.industry-name {
+  font-weight: bold;
+}
+
+.industry-name b {
+  margin-right: 15px;
+  color: var(--coral);
+  font-size: 11px;
+}
+
+.roadmap-section {
+  display: flex;
+  gap: 8%;
+  padding: 140px 7%;
+  background-color: var(--coral);
+}
+
+.roadmap-label {
+  display: flex;
+  gap: 15px;
+  width: 20%;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.roadmap-label span {
+  font-size: 22px;
+}
+
+.roadmap-label p {
+  margin: 4px 0 0;
+}
+
+.roadmap-content {
+  width: 72%;
+}
+
+.roadmap-content h2 em {
+  color: var(--ink);
+}
+
+.steps {
+  display: flex;
+  gap: 25px;
+  margin: 80px 0 45px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(23, 34, 31, 0.35);
+}
+
+.steps > div {
+  flex: 1;
+}
+
+.steps span {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.steps p {
+  line-height: 1.5;
+}
+
+.closing-line {
+  font-size: 18px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 7%;
+  background-color: var(--lime);
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.home-introduction {
+  max-width: 800px;
+  padding: 130px 7%;
+}
+
+.home-introduction h2,
+.home-message h2 {
+  margin: 0 0 30px;
+}
+
+.home-introduction > p:last-child,
+.home-message > p:last-child {
+  max-width: 560px;
+  color: rgba(23, 34, 31, 0.7);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.home-pages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--line);
+}
+
+.home-page-card {
+  min-height: 300px;
+  padding: 40px 7%;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+}
+
+.home-page-card:nth-child(even) {
+  border-right: 0;
+}
+
+.home-page-card:hover {
+  background-color: var(--lime);
+}
+
+.home-page-card span {
+  color: var(--coral);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.home-page-card h3 {
+  margin: 55px 0 15px;
+  font-size: 30px;
+}
+
+.home-page-card p {
+  max-width: 360px;
+  color: rgba(23, 34, 31, 0.7);
+  line-height: 1.5;
+}
+
+.home-page-card strong {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.roadmap-card {
+  background-color: var(--coral);
+}
+
+.roadmap-card:hover {
+  background-color: var(--lime);
+}
+
+.home-message {
+  padding: 140px 7%;
+  background-color: var(--ink);
+  color: var(--paper);
+}
+
+.home-message .eyebrow {
+  color: var(--lime);
+}
+
+.home-message em {
+  color: var(--lime);
+}
+
+.home-message > p:last-child {
+  color: rgba(243, 239, 229, 0.7);
+}
+
+.page-hero {
+  min-height: 550px;
+  padding: 130px 7% 100px;
+  border-bottom: 1px solid var(--line);
+}
+
+.page-hero h1 {
+  max-width: 950px;
+  margin-bottom: 35px;
+}
+
+.page-intro {
+  max-width: 520px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.outlook-hero {
+  background-color: var(--lime);
+}
+
+.outlook-hero em {
+  color: var(--ink);
+}
+
+.difficulties-hero {
+  background-color: #e8e1d3;
+}
+
+.options-hero {
+  background-color: var(--ink);
+  color: var(--paper);
+}
+
+.options-hero .eyebrow,
+.options-hero em,
+.roadmap-hero em {
+  color: var(--lime);
+}
+
+.roadmap-hero {
+  background-color: var(--coral);
+}
+
+.roadmap-hero em {
+  color: var(--ink);
+}
+
+.detail-section,
+.challenge-section,
+.roadmap-page-section {
+  display: flex;
+  gap: 8%;
+  padding: 130px 7%;
+  border-bottom: 1px solid var(--line);
+}
+
+.detail-list {
+  width: 62%;
+  border-top: 1px solid var(--line);
+}
+
+.detail-item {
+  display: flex;
+  gap: 30px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.detail-item > span,
+.roadmap-step > span {
+  color: var(--coral);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.detail-item h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.detail-item p,
+.challenge-item p,
+.answer-section > p:last-child,
+.roadmap-step p,
+.options-bottom .text-link {
+  color: rgba(23, 34, 31, 0.7);
+  line-height: 1.6;
+}
+
+.quote-section {
+  padding: 100px 7%;
+  background-color: var(--coral);
+}
+
+.quote-section p {
+  max-width: 800px;
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 42px;
+  line-height: 1.1;
+}
+
+.challenge-section {
+  background-color: #e8e1d3;
+}
+
+.challenge-column {
+  width: 50%;
+}
+
+.challenge-column h2 {
+  margin-top: 0;
+  font-size: 48px;
+}
+
+.human-challenges h2 {
+  color: var(--coral);
+}
+
+.challenge-item {
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+}
+
+.challenge-item h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.answer-section {
+  padding: 120px 7%;
+}
+
+.answer-section h2 {
+  margin-bottom: 30px;
+}
+
+.industry-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.industry-card {
+  min-height: 350px;
+  padding: 50px 7%;
+  border-right: 1px solid rgba(243, 239, 229, 0.25);
+  border-bottom: 1px solid rgba(243, 239, 229, 0.25);
+  background-color: var(--ink);
+  color: var(--paper);
+}
+
+.industry-card:nth-child(2),
+.industry-card:nth-child(3) {
+  background-color: #25352f;
+}
+
+.industry-card > span {
+  color: var(--coral);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.industry-card h2 {
+  margin: 55px 0 15px;
+  color: var(--lime);
+  font-size: 42px;
+}
+
+.industry-card p {
+  max-width: 430px;
+  color: rgba(243, 239, 229, 0.7);
+  line-height: 1.55;
+}
+
+.industry-card strong {
+  font-size: 12px;
+  color: var(--lime);
+}
+
+.options-bottom {
+  padding: 120px 7%;
+  background-color: var(--lime);
+}
+
+.options-bottom h2 {
+  margin-bottom: 35px;
+}
+
+.roadmap-step {
+  display: flex;
+  gap: 30px;
+  width: 75%;
+  padding: 25px 0;
+  border-top: 1px solid var(--line);
+}
+
+.roadmap-step h2 {
+  margin: 0 0 12px;
+  font-size: 35px;
+  letter-spacing: -1px;
+}
+
+.roadmap-step p {
+  max-width: 650px;
+  margin-bottom: 0;
+}
+
+.roadmap-final {
+  padding: 120px 7%;
+  background-color: var(--coral);
+}
+
+.roadmap-final p {
+  font-size: 18px;
+}
+
+.roadmap-final h2 {
+  margin-bottom: 0;
+}
+
+.roadmap-final em {
+  color: var(--ink);
+}
+
+@media (max-width: 760px) {
+  .topbar {
+    align-items: flex-start;
+    padding: 20px 7%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .date-stamp {
+    text-align: right;
+  }
+
+  .hero {
+    display: block;
+  }
+
+  .hero-copy,
+  .hero-marker {
+    width: 100%;
+  }
+
+  .hero-copy {
+    padding: 110px 8% 90px;
+  }
+
+  h1 {
+    font-size: 68px;
+    letter-spacing: -4px;
+  }
+
+  h2 {
+    font-size: 52px;
+  }
+
+  .hero-marker {
+    min-height: 300px;
+    padding: 60px 8%;
+  }
+
+  .hero-marker span {
+    font-size: 75px;
+  }
+
+  .hero-marker strong {
+    margin: 70px 0 45px 25%;
+    font-size: 130px;
+  }
+
+  .section-block,
+  .difficulties-section,
+  .options-section,
+  .roadmap-section {
+    display: block;
+    padding: 85px 8%;
+  }
+
+  .section-heading,
+  .outlook-list,
+  .difficulty-columns,
+  .options-table,
+  .roadmap-content,
+  .roadmap-label {
+    width: 100%;
+  }
+
+  .section-heading {
+    margin-bottom: 55px;
+  }
+
+  .difficulty-columns {
+    display: block;
+  }
+
+  .difficulty-column {
+    margin-bottom: 45px;
+  }
+
+  .table-head {
+    display: none;
+  }
+
+  .table-row {
+    display: block;
+  }
+
+  .table-row span {
+    display: block;
+    width: 100% !important;
+    margin: 8px 0;
+  }
+
+  .roadmap-label {
+    margin-bottom: 40px;
+  }
+
+  .steps {
+    display: block;
+    margin-top: 55px;
+  }
+
+  .steps > div {
+    margin-bottom: 28px;
+  }
+
+  footer {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .home-introduction,
+  .home-message,
+  .page-hero,
+  .answer-section,
+  .options-bottom,
+  .roadmap-final {
+    padding: 85px 8%;
+  }
+
+  .home-pages,
+  .industry-section {
+    display: block;
+  }
+
+  .home-page-card {
+    min-height: 250px;
+    border-right: 0;
+  }
+
+  .home-page-card h3,
+  .industry-card h2 {
+    margin-top: 35px;
+  }
+
+  .page-hero {
+    min-height: 0;
+  }
+
+  .page-hero h1 {
+    font-size: 68px;
+  }
+
+  .detail-section,
+  .challenge-section,
+  .roadmap-page-section {
+    display: block;
+    padding: 85px 8%;
+  }
+
+  .detail-list,
+  .challenge-column,
+  .roadmap-step {
+    width: 100%;
+  }
+
+  .challenge-column {
+    margin-bottom: 55px;
+  }
+
+  .quote-section {
+    padding: 80px 8%;
+  }
+
+  .quote-section p {
+    font-size: 30px;
+  }
+
+  .industry-card {
+    min-height: 300px;
+    border-right: 0;
+  }
+
+  .roadmap-step {
+    gap: 20px;
+  }
+
+  .roadmap-step h2 {
+    font-size: 28px;
+  }
+}
