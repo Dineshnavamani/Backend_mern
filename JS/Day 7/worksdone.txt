@@ -1,0 +1,4 @@
+1.Syntax of callback type
+-- promise , then, catch,finally,async, then.
+
+2. Data passing - take the data and access data .Data
