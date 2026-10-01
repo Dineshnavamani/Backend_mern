@@ -1,0 +1,43 @@
+1.Js ,react ,angular which one prefer and why in your project.
+
+JavaScript is the basic programming language that I need to understand before using React. Angular is a complete framework and provides many features directly, but for my project I prefer React because it gives me more flexibility in choosing libraries and project structure.
+I would prefer React for my project because React is flexible, component-based, and easier to manage for creating modern user interfaces. React also provides good support for reusable components and has a large ecosystem.
+
+
+2.create a car in website ,what all are the function ,variable etc used in react,JS
+
+If I create a Car Showroom website, I would use variables to store information about cars and functions to perform different operations.
+
+The variables can store information such as:
+
+Car name
+Car brand
+Car model
+Car price
+Car color
+Manufacturing year
+Fuel type
+Mileage
+Availability
+Quantity
+
+Functions can be used to perform different operations, such as:
+
+Displaying car details
+Searching for a car
+Filtering cars
+Changing the selected car color
+
+In React, I can also use components, props, state, event handling, and hooks to build the car website.
+
+ 3.which are the place did you use var,let,const in your point of viewvar
+
+var is the older way of declaring variables in JavaScript. It has function scope and can be redeclared and reassigned.
+
+It is mainly found in older JavaScript applications. In modern projects, I would generally avoid using var because let and const provide better block-level scope.
+
+4.which one prefer in JS DOM and React ES6+ feature if you are create a website .
+
+For creating a modern website, I would prefer React with ES6+ features because it provides reusable components and easier UI management.
+I would learn the DOM to understand how JavaScript interacts with HTML elements.
+ES6+ features such as let, const, arrow functions, destructuring, and array methods make the code cleaner and easier to maintain.
