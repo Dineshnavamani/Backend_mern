@@ -1,3 +1,4 @@
+import Fifth from "./componet/Fifth"
 import First from "./componet/First"
 import Fourth from "./componet/Fourth"
 import Second from "./componet/Second"
@@ -11,6 +12,7 @@ const App = () => {
        <Second/>
        <Third/>
        <Fourth/>
+       <Fifth/>
     </div>
 
     </>

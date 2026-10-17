@@ -16,10 +16,17 @@ const Fourth = () => {
             setFruit("")
 
         }
-        const handleupdate =(index)=>{
-            setFruit(arranged[index])
-            SetEditIndex(index)
+        const handleupdate =(data,id)=>{
+            setFruit(data)
+            SetEditIndex(id)
 
+        }
+        const handlesave=(e)=>{
+            e.preventDefault()
+            const saves =arranged.map((e,i)=>i==editindex?fruit:e)
+            setArranged(saves)
+            SetEditIndex(null)
+            setFruit("")
         }
 
         
@@ -28,12 +35,14 @@ const Fourth = () => {
     <>
     <div>
         <input type="text" placeholder="Enter the Fruit Name" value={fruit} onChange={(e)=> setFruit(e.target.value)}/>
-        <button onClick={handleclick}>Add Fruit</button>
+        
+        {editindex==null?<button onClick={handleclick}>Add Fruit</button>:
+        <button onClick={handlesave}>Save</button>}
 
             {arranged.map((e,i)=>(
                 <div key={i}>
                     <p>{e}</p>
-                    <button onClick={()=> handleupdate(i)} >Update</button>
+                    <button onClick={()=> handleupdate(e,i)} >Update</button>
 
                 </div>
             ))}
