@@ -1,0 +1,14 @@
+.dark{
+    background-color: aqua;
+    color: black;
+    text-align: center;
+    padding: 10;
+    height: 20vh;
+}
+.light{
+    background-color:black;
+    color: aqua;
+    text-align: center;
+    padding: 10;
+    height: 20vh;
+}

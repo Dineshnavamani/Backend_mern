@@ -10,7 +10,7 @@ const Login = () => {
     }
     const handlesubmit =(e)=>{
         e.preventDefault()
-        const getdata=JSON.parse(localStorage.getItem("assigns"))
+        const getdata=JSON.parse(localStorage.getItem("assigns"))  ||[]
        // console.log(getdata);
        
        const findUser=getdata.find((e)=>e.email===logindata.useremail && e.password === logindata.userpassword)
