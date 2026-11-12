@@ -1,0 +1,6 @@
+
+        Platform: win32
+        Architecture: x64
+        Hostname: kiddo
+        Total RAM: 7.84 GB
+        
